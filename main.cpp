@@ -46,6 +46,9 @@ int main()
 
     std::string route = getRouteFromClient(buffer);
 
+    if (route == "/")
+      route = "Home";
+
     std::string htmlBody =
         "<!DOCTYPE html>\n"
         "<html>\n"
